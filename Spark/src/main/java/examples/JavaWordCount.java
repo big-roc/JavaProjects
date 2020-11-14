@@ -25,7 +25,7 @@ public class JavaWordCount {
                 .master("local[*]")
                 .appName("JavaWordCount")
                 .getOrCreate();
-        String paths = "D:\\WorkSpace\\IdeaProjects\\JavaProjects\\Spark\\src\\main\\data\\word_count.txt";
+        String paths = "./Spark/src/main/resources/word_count.txt";
         JavaRDD<String> lines = spark.read().textFile(paths).javaRDD();
         JavaRDD<String> words = lines.flatMap(s -> Arrays.asList(SPACE.split(s)).iterator());
         JavaPairRDD<String, Integer> ones = words.mapToPair(s -> new Tuple2<>(s, 1));
