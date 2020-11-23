@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="roc-hive" />
+        <module name="roc-jiguang" />
+        <module name="roc-spark" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="roc-hive" target="1.8" />
+      <module name="roc-java" target="1.8" />
+      <module name="roc-jiguang" target="1.8" />
+      <module name="roc-spark" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

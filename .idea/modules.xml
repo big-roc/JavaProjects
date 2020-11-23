@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Hive/roc-hive.iml" filepath="$PROJECT_DIR$/Hive/roc-hive.iml" />
+      <module fileurl="file://$PROJECT_DIR$/roc-java.iml" filepath="$PROJECT_DIR$/roc-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PrivateCloud/roc-jiguang.iml" filepath="$PROJECT_DIR$/PrivateCloud/roc-jiguang.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spark/roc-spark.iml" filepath="$PROJECT_DIR$/Spark/roc-spark.iml" />
+    </modules>
+  </component>
+</project>
