@@ -5,8 +5,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.ArrayList;
-
 /**
  * 类名称:UDFFindJSONArray
  * 类描述:自定义函数从JSONArray中查找需要的值
