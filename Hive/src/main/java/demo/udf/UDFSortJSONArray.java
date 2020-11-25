@@ -31,9 +31,11 @@ public class UDFSortJSONArray extends UDF {
             HashMap<Integer, String> result = new HashMap<>();
             for (int i = 0; i < extractObj.length(); ++i) {
                 JSONObject jsonObject = extractObj.getJSONObject(i);
-                String synonymName = jsonObject.getString("synonymName");
-                Integer rank = i + 1;
-                result.put(rank, synonymName);
+                if (!jsonObject.toString().equals("{}")) {
+                    String synonymName = jsonObject.getString("synonymName");
+                    Integer rank = i + 1;
+                    result.put(rank, synonymName);
+                }
             }
             return result;
         } catch (JSONException e) {
