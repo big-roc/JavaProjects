@@ -8,9 +8,6 @@ import org.json.JSONObject;
 import java.util.Map;
 import java.util.HashMap;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-
 /**
  * 类名称:UDFJsonArray
  * 类描述:解析JSONArray并排序
@@ -20,10 +17,8 @@ import org.apache.commons.logging.LogFactory;
  */
 
 public class UDFSortJSONArray extends UDF {
-    static final Log LOG = LogFactory.getLog(UDFSortJSONArray.class.getName());
 
     public Map<Integer, String> evaluate(String JSONString) {
-        LOG.info("hello");
         //判断JSONString是否为null
         if (JSONString == null) {
             return null;

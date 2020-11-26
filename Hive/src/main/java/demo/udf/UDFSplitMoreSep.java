@@ -2,8 +2,8 @@ package demo.udf;
 
 import org.apache.hadoop.hive.ql.exec.UDF;
 
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * 类名称:UDFSplit
@@ -13,7 +13,7 @@ import java.util.Arrays;
  * 版本:v1.0
  */
 public class UDFSplitMoreSep extends UDF {
-    public ArrayList<String> evaluate(String s) {
+    public Map<Integer, String> evaluate(String s) {
 
         String sep1 = "“*”";
         String sep2 = "“-”";
@@ -26,7 +26,7 @@ public class UDFSplitMoreSep extends UDF {
             return null;
         }
         try {
-            ArrayList<String> result = new ArrayList<>();
+            Map<Integer, String> result = new HashMap<>();
             if (s.contains(sep1)) {
                 split(s, sep1, result);
             } else if (s.contains(sep2)) {
@@ -34,7 +34,7 @@ public class UDFSplitMoreSep extends UDF {
             } else if (s.contains(sep3)) {
                 split(s, sep3, result);
             } else {
-                result.add(s);
+                result.put(1, s);
             }
 
             return result;
@@ -43,8 +43,12 @@ public class UDFSplitMoreSep extends UDF {
         }
     }
 
-    private void split(String s, String sep, ArrayList<String> res) {
+    private void split(String s, String sep, Map<Integer, String> res) {
         String[] arrayString = s.split(sep);
-        res.addAll(Arrays.asList(arrayString));
+        int i = 1;
+        for (String w : arrayString) {
+            res.put(i, w);
+            i += 1;
+        }
     }
 }
