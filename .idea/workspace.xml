@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a0c15c0-01de-481a-a244-2b324e234efa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Hive/src/main/java/demo/udf/UDFExtractSep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spark/src/main/resources/core-site.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spark/src/main/resources/hdfs-site.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spark/src/main/resources/hive-site.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spark/src/main/resources/mapred-site.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spark/src/main/resources/yarn-site.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spark/src/main/scala/product_etl/ProductETL.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spark/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Spark/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7a0c15c0-01de-481a-a244-2b324e234efa" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,10 +58,13 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\WorkSpace\Git\JavaProjects\Spark\src\main\resources" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="demo.udf" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\WorkSpace\Git\JavaProjects\Spark\src\main\resources" />
     </key>
   </component>
@@ -86,7 +80,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ProductETL">
+  <component name="RunManager" selected="Application.Temp1">
     <configuration name="JavaWordCount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="examples.JavaWordCount" />
       <module name="roc-spark" />
@@ -126,6 +120,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Temp1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo.udf.Temp1" />
+      <module name="roc-hive" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="demo.udf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WordCount" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="exmaples.WordCount" />
       <module name="roc-spark" />
@@ -141,6 +148,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Temp1" />
         <item itemvalue="Application.ProductETL" />
         <item itemvalue="Application.WordCount" />
         <item itemvalue="Application.Temp" />
@@ -167,7 +175,8 @@
       <workItem from="1606100140640" duration="238000" />
       <workItem from="1606100419965" duration="527000" />
       <workItem from="1606101001547" duration="473000" />
-      <workItem from="1606101804919" duration="2847000" />
+      <workItem from="1606101804919" duration="7704000" />
+      <workItem from="1606295584336" duration="17077000" />
     </task>
     <task id="LOCAL-00001" summary="更新reademe">
       <created>1605336800285</created>
@@ -190,7 +199,42 @@
       <option name="project" value="LOCAL" />
       <updated>1605578952139</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="本地调试Spark程序，读取远程Hive数据">
+      <created>1606112282269</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606112282269</updated>
+    </task>
+    <task id="LOCAL-00005" summary="本地调试Spark程序，读取远程Hive数据">
+      <created>1606295620922</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606295620922</updated>
+    </task>
+    <task id="LOCAL-00006" summary="本地调试Spark程序，读取远程Hive数据">
+      <created>1606303223752</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1606303223752</updated>
+    </task>
+    <task id="LOCAL-00007" summary="本地调试Spark程序，读取远程Hive数据">
+      <created>1606373044870</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1606373044870</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Hive UDF函数">
+      <created>1606375307374</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1606375307374</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,6 +256,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="更新reademe" />
     <MESSAGE value="添加UDF函数" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加UDF函数" />
+    <MESSAGE value="本地调试Spark程序，读取远程Hive数据" />
+    <MESSAGE value="Hive UDF函数" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hive UDF函数" />
   </component>
 </project>
